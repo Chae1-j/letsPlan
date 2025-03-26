@@ -44,6 +44,13 @@ Table of Content:
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400,500");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .list {
   list-style: none;
   margin: 0px;
@@ -234,6 +241,7 @@ button:focus {
   .header_area .menu_nav {
     width: 100%; }
   .header_area .navbar {
+    font-family: LINESeedKR-Rg;
     background: transparent;
     padding: 0px;
     border: 0px;

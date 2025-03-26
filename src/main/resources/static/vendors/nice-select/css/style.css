@@ -287,7 +287,7 @@ a:not(.button) {
 
 .container {
   margin: 96px auto 60px;
-  max-width: 40em; }
+  max-width: 50em; }
 
 .box {
   background-color: #f6f7f9;
