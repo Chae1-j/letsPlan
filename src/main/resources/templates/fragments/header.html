@@ -2,8 +2,8 @@
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand logo_h" th:href="@{/}">
-                    <img th:src="@{/img/logo.png}" alt="">
+                <a class="navbar-brand logo_h" th:href="@{/}">Trip Mate
+                    <!--<img th:src="@{/img/logo.png}" alt="">-->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,18 +14,24 @@
 
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav justify-content-center mx-auto">
-                        <li class="nav-item"><a class="nav-link" th:href="@{/}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/template_sample/category.html">Category</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/template_sample/archive.html">Archive</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/}">홈화면</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false">Pages</a>
+                               aria-haspopup="true" aria-expanded="false">계획세우기</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" th:href="@{/elements}">Elements</a></li>
-                                <li class="nav-item"><a class="nav-link" th:href="@{/single-blog}">Post Details</a></li>
+                                <li class="nav-item"><a class="nav-link" th:href="@{/elements}">여행일정관리하기</a></li>
+                                <li class="nav-item"><a class="nav-link" th:href="@{/single-blog}">예산관리하기</a></li>
+                            </ul>
+                        <li class="nav-item submenu dropdown">
+                            <a th:href="@{/mypage-main}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">마이페이지</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" th:href="@{/login}">로그인</a></li>
+                                <li class="nav-item"><a class="nav-link" th:href="@{/elements}">회원정보 수정</a></li>
+                                <li class="nav-item"><a class="nav-link" th:href="@{/single-blog}">예산관리하기</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" th:href="@{/contact}">Contact</a></li>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav ml-auto search">
                         <li class="nav-item d-flex align-items-center mr-10">
