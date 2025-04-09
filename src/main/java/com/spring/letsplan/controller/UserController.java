@@ -12,7 +12,7 @@ public class UserController {
 
     @GetMapping("/login")
     public String login() {
-        return "/user/mypage-main";
+        return "/user/login";
     }
 
     @GetMapping("/register")
