@@ -18,6 +18,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/custom-style.css">
 </head>
 
 <body>
@@ -26,22 +27,35 @@
 <div th:replace="fragments/header :: header"></div>
 <!--================ Header Menu Area =================-->
 
-<div>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">아이디</span>
-        <input type="text" class="form-control" placeholder="userId" aria-label="userId" aria-describedby="basic-addon1">
-    </div>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon2">비밀번호</span>
-        <input type="text" class="form-control" placeholder="userPwd" aria-label="userPwd" aria-describedby="basic-addon2">
+    <div class="content-area">
+        <form>
+            <div class="container_inner">
+                <div class="row g-3 align-items-center ">
+                    <div class="col-auto">
+                        <label for="inputId" class="col-form-label">ID</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password" id="inputId" class="form-control" aria-describedby="idHelpLine">
+                    </div>
+                    <div class="col-auto">
+                        <span id="idHelpLine" class="form-text">Must be 8-20 characters long. </span>
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center ">
+                    <div class="col-auto">
+                        <label for="inputPassword" class="col-form-label">Password</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">Must be 8-20 characters long</span>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 
-    <div>
-        <button class="btn-primary">로그인</button>
-        <button class="btn-secondary">취소</button>
-    </div>
-
-</div>
 
 
 

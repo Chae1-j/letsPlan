@@ -130,13 +130,13 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section-gap {
-  padding: 150px 0; }
+  padding: 100px 0; }
   @media (max-width: 1199px) {
     .section-gap {
-      padding: 100px 0; } }
+      padding: 70px 0; } }
   @media (max-width: 991px) {
     .section-gap {
-      padding: 60px 0; } }
+      padding: 50px 0; } }
 
 /* Main Title Area css
 ============================================================================================ */
@@ -3069,7 +3069,7 @@ h6 {
 /*============== footer-area css ===============*/
 .footer-area {
   background: #f1f9ff;
-  font-size: 16px; }
+  font-size: 14px; }
 
 .single-footer-widget.footer_middle {
   text-align: center;
@@ -3145,11 +3145,11 @@ h6 {
   top: 0px; }
 
 .footer_title {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   text-transform: uppercase; }
 
 .border_line {
