@@ -28,30 +28,24 @@
 <!--================ Header Menu Area =================-->
 
     <div class="content-area">
-        <form>
+        <form id="login-form" th:action="@{/login}" th:object="${user}" method="post">
             <div class="container_inner">
-                <div class="row g-3 align-items-center ">
-                    <div class="col-auto">
-                        <label for="inputId" class="col-form-label">ID</label>
-                    </div>
-                    <div class="col-auto">
-                        <input type="password" id="inputId" class="form-control" aria-describedby="idHelpLine">
-                    </div>
-                    <div class="col-auto">
-                        <span id="idHelpLine" class="form-text">Must be 8-20 characters long. </span>
-                    </div>
+                <div>
+                    <label for="userId" class="col-form-label">ID</label>
+                    <input type="text" id="userId" class="form-control" aria-describedby="idHelpLine">
+                    <hr>
+                    <label for="userPwd" class="col-form-label">비밀번호</label>
+                    <input type="text" id="userPwd" class="form-control" aria-describedby="pwdHelpLine">
                 </div>
-                <div class="row g-3 align-items-center ">
-                    <div class="col-auto">
-                        <label for="inputPassword" class="col-form-label">Password</label>
-                    </div>
-                    <div class="col-auto">
-                        <input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpInline">
-                    </div>
-                    <div class="col-auto">
-                        <span id="passwordHelpInline" class="form-text">Must be 8-20 characters long</span>
-                    </div>
+                <div class="login-btn-group text-center">
+                    <button type="submit" class="btn btn-primary">로그인</button>
+                    <button type="reset" class="btn btn-outline-primary">취소</button>
                 </div>
+            </div>
+            <div class="form-a text-center">
+                <a href="/findId">아이디 찾기</a> |
+                <a href="/chngPwd">비밀번호 변경</a> |
+                <a href="/register">회원가입</a>
             </div>
         </form>
     </div>

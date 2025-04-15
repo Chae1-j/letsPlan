@@ -31,26 +31,42 @@
                                 <li class="nav-item"><a class="nav-link" th:href="@{/single-blog}">예산관리하기</a></li>
                             </ul>
                         </li>
-                        </li>
                     </ul>
-                    <ul class="nav navbar-nav ml-auto search">
-                        <li class="nav-item d-flex align-items-center mr-10">
-                            <div class="menu-form">
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Search here">
-                                    </div>
-                                </form>
-                            </div>
-                            <button type="submit" class="search-icon">
-                                <i class="lnr lnr-magnifier"></i>
-                            </button>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right ml-auto">
+
+<!--                    <ul class="nav navbar-nav ml-auto search d-flex align-items-center">-->
+<!--                        <li class="nav-item d-flex align-items-center mr-3">-->
+<!--                            <div class="menu-form d-flex align-items-center" >-->
+<!--                                <form class="d-flex align-items-center m-0">-->
+<!--                                    <div class="form-group mb-0">-->
+<!--                                        <input type="text" class="form-control form-control-sm" placeholder="Search here">-->
+<!--                                    </div>-->
+<!--                                </form>-->
+<!--                            </div>-->
+<!--                            <button type="submit" class="search-icon border-0 bg-transparent p-2 d-flex align-items-center">-->
+<!--                                <i class="lnr lnr-magnifier"></i>-->
+<!--                            </button>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item d-flex align-items-center ml-2">-->
+<!--                            <i class="fas fa-user-alt mr-2" style="font-size:36px;"></i>-->
+<!--                            <a th:href="@{/login}" class="nav-link p-0">로그인</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+
+                    <ul class="nav navbar-nav ml-auto d-flex align-items-center">
+                        <!-- 검색창 -->
                         <li class="nav-item">
-                            <i class='fas fa-user-alt' style='font-size:36px'></i>
-                            <a th:href="@{/login}">로그인</a>
+                            <form action="/search" method="get" class="d-flex align-items-center m-0 p-0">
+                                <input type="text" name="q" class="form-control form-control-sm" placeholder="Search here" style="max-width: 150px; min-width: 100px;">
+                                <button type="submit" class="btn btn-link p-2">
+                                    <i class="lnr lnr-magnifier"></i>
+                                </button>
+                            </form>
+                        </li>
+
+                        <!-- 로그인 -->
+                        <li class="nav-item d-flex align-items-center ml-3">
+                            <i class="fas fa-user-alt mr-2" style="font-size: 16px;"></i>
+                            <a th:href="@{/login}" class="nav-link p-0" style="font-size: 14px;">로그인</a>
                         </li>
                     </ul>
                 </div>

@@ -1,6 +1,29 @@
 .content-area {
-    padding: 0 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* or 100vh, depending on header/footer height */
+    padding: 60px 0;
+    box-sizing: border-box;
 }
 .content-area form {
-    padding: 10%;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container-inner {
+    margin-bottom: 0px;
+}
+
+#login-form div{
+    padding-bottom: 15px;
+}
+
+.form-a {
+    margin: auto;
 }
