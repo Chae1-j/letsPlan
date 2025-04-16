@@ -18,19 +18,19 @@ public class UserController {
     }
 
     // 회원가입 페이지
-    @PostMapping("/register")
+    @GetMapping("/signup")
     public String register() {
-        return "/user/register";
+        return "/user/signup";
     }
 
     // 아이디 찾기
-    @PostMapping("/findId")
+    @GetMapping("/findId")
     public String findId() {
         return null;
     }
 
     // 비밀번호 찾기
-    @PostMapping("/chngPwd")
+    @GetMapping("/chngPwd")
     public String chngPwd() {
         return null;
     }

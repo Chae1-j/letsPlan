@@ -24,7 +24,7 @@
 <body>
 
 <!--================Header Menu Area =================-->
-<div th:replace="fragments/header :: header"></div>
+<div th:replace="~{fragments/header :: header}"></div>
 <!--================ Header Menu Area =================-->
 
     <div class="content-area">
@@ -45,7 +45,7 @@
             <div class="form-a text-center">
                 <a href="/findId">아이디 찾기</a> |
                 <a href="/chngPwd">비밀번호 변경</a> |
-                <a href="/register">회원가입</a>
+                <a href="/signup">회원가입</a>
             </div>
         </form>
     </div>
@@ -56,7 +56,7 @@
 
 
 <!--================ start footer Area  =================-->
-<div th:replace="fragments/footer :: footer"></div>
+<div th:replace="~{fragments/footer :: footer}"></div>
 <!--================ End footer Area  =================-->
 
 <!-- ####################### Start Scroll to Top Area ####################### -->
