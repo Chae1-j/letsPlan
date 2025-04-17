@@ -28,3 +28,20 @@
 .form-a {
     margin: auto;
 }
+
+#signup-form {
+    padding: 30px;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    padding: 2rem 1rem; /* 위아래/양옆 여백 */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
