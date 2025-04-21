@@ -1,4 +1,4 @@
-package com.spring.letsplan.controller.UserController1;
+package com.spring.letsplan.controller.user;
 
 import org.springframework.stereotype.Controller;
 

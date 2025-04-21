@@ -1,4 +1,4 @@
-package com.spring.letsplan.controller;
+package com.spring.letsplan.controller.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +15,11 @@ public class UserController {
     @GetMapping("/login")
     public String login() {
         return "/user/login";
+    }
+
+    @PostMapping("/login")
+    public void loginPost() {
+
     }
 
     // 회원가입 페이지
