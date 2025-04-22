@@ -46,14 +46,14 @@ Table of Content:
 /*----------------------------------------------------*/
 @font-face {
   font-family: 'LINESeedKR-Bd';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  src: url('../fonts/LINESeedKR-Bd.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LINESeedKR-Rg';
-  src: url('//fonts/LINESeedKr-Rg.woff') format('woff');
+  src: url('../fonts/LINESeedKR-Rg.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -76,14 +76,14 @@ a {
 body {
   line-height: 26px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'LINESeedKR-Rg','Noto Sans KR', sans-serif; /* "Roboto", sans-serif; */
   font-weight: normal;
   color: #777777;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "LINESeedKR-Bd", 'Noto Sans KR', serif;
   font-weight: bold;
   color: #000;
   margin: 0; }
@@ -241,11 +241,12 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .header_area {
-  position: absolute;
+  position: relative; /*position: absolute;*/
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
+  background: #f3f3f3;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .menu_nav {
     width: auto; } /* 0416 수정 */
@@ -264,7 +265,7 @@ button:focus {
         .header_area .navbar .nav .nav-item {
           margin-0: 28px; } }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 14px/100px "Roboto", sans-serif;
+        font: 500 14px/100px  "LINESeedKR-Rg" , "Noto Sans KR", sans-serif;
         text-transform: capitalize;
         color: #000;
         padding: 0px;
@@ -593,7 +594,7 @@ button:focus {
       .blog_banner .banner_inner .blog_b_text h2 {
         font-size: 60px;
         font-weight: 500;
-        font-family: "Playfair Display", serif;
+        font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
         line-height: 66px;
         margin-bottom: 15px; }
       .blog_banner .banner_inner .blog_b_text p {
@@ -905,7 +906,7 @@ button:focus {
     padding: 30px 35px 40px 30px; }
     .causes_item .causes_text h4 {
       color: #000;
-      font-family: "Playfair Display", serif;
+      font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 15px;
@@ -926,7 +927,7 @@ button:focus {
     line-height: 50px;
     background: #081113;
     color: #fff;
-    font-family: "Playfair Display", serif;
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif; /* "Playfair Display", serif; */
     font-size: 14px;
     font-weight: 500; }
     .causes_item .causes_bottom a + a {
@@ -1499,7 +1500,7 @@ button:focus {
     padding: 0px 20px;
     font-size: 12px;
     color: #000;
-    font-family: "Playfair Display", serif;
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
     font-weight: 500;
     line-height: 28px;
     background: #f1f9ff;
@@ -1612,27 +1613,27 @@ button:focus {
   box-shadow: none;
   padding: 0px 15px;
   font-size: 13px;
-  font-family: "Playfair Display", serif;
+  font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
   font-weight: 300;
   color: #999999; }
   .reservation_form .form-group input.placeholder {
     font-size: 13px;
-    font-family: "Playfair Display", serif;
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
     font-weight: 300;
     color: #999999; }
   .reservation_form .form-group input:-moz-placeholder {
     font-size: 13px;
-    font-family: "Playfair Display", serif;
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
     font-weight: 300;
     color: #999999; }
   .reservation_form .form-group input::-moz-placeholder {
     font-size: 13px;
-    font-family: "Playfair Display", serif;
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
     font-weight: 300;
     color: #999999; }
   .reservation_form .form-group input::-webkit-input-placeholder {
     font-size: 13px;
-    font-family: "Playfair Display", serif;
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
     font-weight: 300;
     color: #999999; }
 .reservation_form .form-group .res_select {
@@ -1644,12 +1645,12 @@ button:focus {
   line-height: 36px; }
   .reservation_form .form-group .res_select .current {
     font-size: 13px;
-    font-family: "Playfair Display", serif;
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;
     font-weight: 300;
     color: #999999; }
   .reservation_form .form-group .res_select:after {
     content: "\e874";
-    font-family: 'Linearicons-Free';
+    font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;;
     color: #cccccc;
     transform: rotate(0deg);
     border: none;
@@ -1749,7 +1750,7 @@ button:focus {
       text-align: center;
       color: #081113;
       padding-bottom: 10px;
-      font-family: "Playfair Display", serif; }
+      font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif; }
     .modal-message .modal-dialog .modal-content .modal-header p {
       display: block; }
 
@@ -2957,7 +2958,7 @@ h6 {
   background: #081113;
   padding: 0px 50px;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;;
   font-size: 13px;
   font-weight: 500;
   line-height: 48px;
@@ -2977,7 +2978,7 @@ h6 {
   background: #081113;
   padding: 0px 32px;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;;
   font-size: 13px;
   font-weight: 500;
   line-height: 38px;
@@ -3017,7 +3018,7 @@ h6 {
   background: #f9f9ff;
   padding: 0px 35px;
   color: #000;
-  font-family: "Playfair Display", serif;
+  font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif;;
   font-size: 13px;
   font-weight: 500;
   line-height: 34px;
@@ -3042,7 +3043,7 @@ h6 {
   border-radius: 15px;
   font-size: 12px;
   font-weight: 500;
-  font-family: "Playfair Display", serif; }
+  font-family: "LINESeedKR-Rg", "Noto Sans KR", sans-serif; }
 
 .blog_btn {
   display: inline-block;
@@ -3181,7 +3182,3 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
-/* 사용자 추가 */
-header > a {
-  font-family: L;
-}

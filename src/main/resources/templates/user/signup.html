@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="/img/shrimp.png" type="image/png">
+        <title>Let's Plan!</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/vendors/linericon/style.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="/vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="/vendors/jquery-ui/jquery-ui.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="/img/shrimp.png" type="image/png">
-    <title>Let's Plan!</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/vendors/linericon/style.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css">
-    <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="/vendors/animate-css/animate.css">
-    <link rel="stylesheet" href="/vendors/jquery-ui/jquery-ui.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-</head>
+    <body>
+        <div class="page-wrapper">
+            <!--================Header Menu Area =================-->
+            <div th:replace="~{fragments/header :: header}"></div>
+            <!--================ Header Menu Area =================-->
 
-<body>
-
-<!--================Header Menu Area =================-->
-<div th:replace="~{fragments/header :: header}"></div>
-<!--================ Header Menu Area =================-->
-
-<div class="content-area">
-    <div class="container-inner">
-        <form class="" id="signup-form" th:action="@{/signup}" th:object="${user}" method="post">
-
-        </form>
-    </div>
-</div>
+            <div class="content-area">
+                <form class="" id="signup-form" th:action="@{/signup}" th:object="${user}" method="post">
+                    <div class="container-inner">
+                        <div>
+                            <label for="userId" class="col-form-label">ID</label>
+                            <input type="text" id="userId" class="form-control">
+                            <button class="btn btn-outline-primary" type="button">중복체크</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
 
 
 
 
-<!--================ start footer Area  =================-->
-<div th:replace="~{fragments/footer :: footer}"></div>
-<!--================ End footer Area  =================-->
+            <!--================ start footer Area  =================-->
+            <div th:replace="~{fragments/footer :: footer}"></div>
+            <!--================ End footer Area  =================-->
 
-<!-- ####################### Start Scroll to Top Area ####################### -->
-<div id="back-top">
-    <a title="Go to Top" href="#">
-        <i class="fa fa-angle-up"></i>
-    </a>
-</div>
-<!-- ####################### End Scroll to Top Area ####################### -->
+            <!-- ####################### Start Scroll to Top Area ####################### -->
+            <div id="back-top">
+                <a title="Go to Top" href="#">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+            <!-- ####################### End Scroll to Top Area ####################### -->
+        </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script th:src="@{/js/jquery-3.2.1.min.js}"></script>
-<script th:src="@{/js/popper.js}"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/stellar.js"></script>
-<script src="/vendors/lightbox/simpleLightbox.min.js"></script>
-<script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-<script src="/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="/vendors/isotope/isotope-min.js"></script>
-<script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="/vendors/jquery-ui/jquery-ui.js"></script>
-<script src="/js/jquery.ajaxchimp.min.js"></script>
-<script src="/js/mail-script.js"></script>
-<script src="/js/wow.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-<script src="/js/theme.js"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script th:src="@{/js/popper.js}"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/stellar.js"></script>
+    <script src="/vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="/vendors/isotope/isotope-min.js"></script>
+    <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/js/mail-script.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="/js/theme.js"></script>
+
+    </body>
 
 </html>
