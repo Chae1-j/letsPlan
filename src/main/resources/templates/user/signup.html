@@ -26,12 +26,22 @@
             <!--================ Header Menu Area =================-->
 
             <div class="content-area">
-                <form class="" id="signup-form" th:action="@{/signup}" th:object="${user}" method="post">
+                <form id="signup-form" th:action="@{/signup}" th:object="${user}" method="post">
                     <div class="container-inner">
+                        <div class="input-group mb-3">
+                            <label for="userId" class="col-form-label">ID</label>
+                            <input type="text" class="form-control" placeholder="영어, 숫자를 포함하여 5-8자를 입력하세요" aria-label="userId" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="chk_dup_id">중복체크</button>
+                        </div>
                         <div>
                             <label for="userId" class="col-form-label">ID</label>
                             <input type="text" id="userId" class="form-control">
                             <button class="btn btn-outline-primary" type="button">중복체크</button>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <label for="userPassword" class="col-form-label">비밀번호</label>
+                            <input type="password" class="form-control" aria-label="userPassword" id="userPassword">
                         </div>
                     </div>
                 </form>
