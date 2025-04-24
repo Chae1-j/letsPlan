@@ -21,6 +21,10 @@ html, body {
     padding-bottom: 100px;
 }
 
+.container-inner {
+    margin: 30px 147px !important;
+}
+
 /*.content-area form {*/
 #login-form {
     width: 100%;
@@ -37,9 +41,19 @@ html, body {
 }
 
 #signup-form {
-    width: 100%;
     max-width: 700px;
-    padding: 40px;
+    /*padding: 40px;
+    max-width: calc(100% - 294px);
+    */
+    margin: 30px 147px; /* 상하 30px, 좌우 147px 여백 */
     border: 1px solid #ddd;
     border-radius: 8px;
+}
+
+/* 선택적: 모바일 화면에서는 여백을 줄이기 */
+@media (max-width: 768px) {
+    #signup-form {
+        margin: 20px 15px;
+        max-width: calc(100% - 30px);
+    }
 }
