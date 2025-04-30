@@ -28,32 +28,30 @@
         <!--================ Header Menu Area =================-->
 
         <div class="content-area">
-            <form id="login-form" th:action="@{/login}" th:object="${user}" method="post">
-                <div class="form-group">
-                    <label for="userId">ID</label>
-                    <input type="text" class="form-control" name="userId" id="userId" placeholder="ID를 입력해주세요">
-<!--                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                    <label for="userPassword">ID</label>
-                    <input type="password" class="form-control" name="userPassword"  id="userPassword" placeholder="비밀번호를 입력하세요.">
-<!--                    <small id="passwordHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                </div>
-                <div class="">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">로그인</button>
-                        <button type="reset" class="btn btn-outline-primary">취소</button>
+            <div class="login-area">
+                <form id="login-form" th:action="@{/login}" th:object="${user}" method="post">
+                    <div class="form-group">
+                        <label for="userId">ID</label>
+                        <input type="text" class="form-control" name="userId" id="userId" placeholder="ID를 입력해주세요">
+    <!--                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--><br>
+                        <label for="userPassword">비밀번호</label>
+                        <input type="password" class="form-control" name="userPassword"  id="userPassword" placeholder="비밀번호를 입력하세요.">
+    <!--                    <small id="passwordHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                     </div>
-                    <div class="">
-                        <a href="/signup">회원가입</a>
-                        <a href="/">ID찾기</a>
-                        <a href="/ch">회원가입</a>
+                    <div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">로그인</button>
+                            <button type="reset" class="btn btn-outline-primary">취소</button>
+                        </div>
+                        <div class="login-link">
+                            <a href="/signup">회원가입</a> |
+                            <a href="/findId">ID찾기</a> |
+                            <a href="/chngPwd">비밀번호변경</a>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-
-
-
-
 
 
         <!--================ start footer Area  =================-->
