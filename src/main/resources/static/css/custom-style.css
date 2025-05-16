@@ -31,7 +31,7 @@ header, footer {
 }
 
 /*------------------------------------------------------ 페이지별 CSS -----------------------------------------------------------------------*/
-/* 로그인 페이지 */
+/* ---------- 로그인 페이지 */
 .login-area {
     border: 1px solid #dfdfdf;
     border-radius: 5px;
@@ -52,12 +52,13 @@ header, footer {
     font-size: 0.9rem;
     color: #555;
 }
+/* ---------- 로그인 페이지 끝 */
 
-/* 회원가입 페이지 */
+/* ---------- 회원가입 페이지 */
 .signup-area {
     border: 1px solid #dfdfdf;
     border-radius: 5px;
     padding: 30px;
     box-sizing: border-box;
-    width: 800px;;
+    width: 800px;
 }

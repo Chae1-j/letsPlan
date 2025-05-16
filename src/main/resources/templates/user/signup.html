@@ -28,13 +28,20 @@
         <div class="content-area">
             <div class="signup-area">
                 <form id="signup-form" th:action="@{/login}" th:object="${user}" method="post">
-                    <label for="userId">ID</label>
-                    <input type="text" class="form-control" name="userId" id="userId" placeholder="영자, 숫자 포함 5자 이상">
-                    <input type="button" class="btn btn-outline-success">
-                    <label for="userPassword">비밀번호</label>
-                    <input type="password" class="form-control" name="userPassword"  id="userPassword" placeholder="비밀번호를 입력하세요.">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control-sm" name="email" id="email">
+                    <div class="form-group">
+                        <label for="userId">ID</label>
+                        <input type="text" class="form-control" name="userId" id="userId" placeholder="영자, 숫자 포함 5자 이상">
+                        <button type="button" class="btn btn-outline-success" id="chkUserId">중복확인</button>
+                        <label for="userPassword">비밀번호</label>
+                        <input type="password" class="form-control" name="userPassword"  id="userPassword" placeholder="비밀번호를 입력하세요.">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                        <button type="button" class="btn btn-outline-success" id="authEmail">이메일 인증하기</button>
+                        <!--
+                        <label for=""></label>
+                        <input type="text" class="form-control" name="" id="">
+                        -->
+                    </div>
                 </form>
             </div>
         </div>
@@ -71,6 +78,9 @@
     <script src="/js/wow.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
     <script src="/js/theme.js"></script>
+    <script src="/js/custom/common/utility.js"></script>
+    <script src="/js/custom/user/signup.js"></script>
+
 
     </body>
 
