@@ -62,3 +62,11 @@ header, footer {
     box-sizing: border-box;
     width: 800px;
 }
+
+.field-row {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
