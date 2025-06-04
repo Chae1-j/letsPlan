@@ -70,3 +70,26 @@ header, footer {
     align-items: center;
     margin-bottom: 15px;
 }
+
+.terms-box {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.checkbox-group {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.checkbox-group a {
+    color: #007bff;
+    text-decoration: underline;
+}

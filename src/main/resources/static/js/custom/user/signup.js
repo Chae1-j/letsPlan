@@ -42,4 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
         });
     }
+
+
+    function toggleTerms(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === "none") ? "block" : "none";
+    }
 });
